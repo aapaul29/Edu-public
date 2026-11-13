@@ -1,0 +1,5 @@
+manim
+numpy
+scipy
+matplotlib
+mujoco   # only for the 3D robot / rigid-body videos (render with MUJOCO_GL=egl on Linux)
