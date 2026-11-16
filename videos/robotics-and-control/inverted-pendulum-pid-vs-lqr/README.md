@@ -2,13 +2,14 @@
 
 Two carts get the same tilted pendulum and, a few seconds later, the same push. PID only watches the angle: it keeps the stick up, but its cart drifts about 7 m away. LQR uses all four states (cart position, cart velocity, angle, angular velocity), so it catches the stick *and* brings the cart back to the center.
 
-**Watch:** [`renders/inverted_pendulum_pid_vs_lqr.mp4`](renders/inverted_pendulum_pid_vs_lqr.mp4) · 1080×1920 · ~22 s
+**Watch:** [`renders/inverted_pendulum_pid_vs_lqr.mp4`](renders/inverted_pendulum_pid_vs_lqr.mp4) · 1080×1920 · ~22 s · sound effects, no voiceover
 
 ## How it's made
 
 1. The full nonlinear cart-pole equations are integrated with RK4 (dt = 1/600 s) for both controllers.
 2. The LQR gain comes from solving the continuous algebraic Riccati equation on the linearized model (`scipy.linalg.solve_continuous_are`).
 3. The precomputed trajectories are played back in Manim with a `ValueTracker`.
+4. [`scenes/make_audio.py`](scenes/make_audio.py) adds synthesized sound effects: a motor whine per cart that follows its control force, a thump on the push, a whoosh when the PID cart runs away and a chime when LQR wins.
 
 ## Parameters
 
@@ -29,3 +30,5 @@ All of them sit at the top of [`scenes/cartpole.py`](scenes/cartpole.py). Try a 
 ```bash
 manim -qh videos/robotics-and-control/inverted-pendulum-pid-vs-lqr/scenes/cartpole.py CartPoleBattle
 ```
+
+The Manim render is silent; `make_audio.py` then mixes in the sounds using `renders/inverted_pendulum_pid_vs_lqr_cues.json`.

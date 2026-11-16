@@ -1,0 +1,71 @@
+[
+ {
+  "t": 0.0,
+  "name": "whoosh"
+ },
+ {
+  "t": 0.8,
+  "name": "tick"
+ },
+ {
+  "t": 5.2,
+  "name": "whoosh"
+ },
+ {
+  "t": 5.2,
+  "name": "pop"
+ },
+ {
+  "t": 6.4,
+  "name": "hum",
+  "run": "P",
+  "run_time": 7.0,
+  "sim_time": 10.0
+ },
+ {
+  "t": 13.4,
+  "name": "wrong"
+ },
+ {
+  "t": 17.0,
+  "name": "whoosh"
+ },
+ {
+  "t": 17.0,
+  "name": "pop"
+ },
+ {
+  "t": 18.2,
+  "name": "hum",
+  "run": "PI",
+  "run_time": 7.0,
+  "sim_time": 10.0
+ },
+ {
+  "t": 25.2,
+  "name": "wrong"
+ },
+ {
+  "t": 27.4,
+  "name": "whoosh"
+ },
+ {
+  "t": 27.4,
+  "name": "pop"
+ },
+ {
+  "t": 28.6,
+  "name": "hum",
+  "run": "PID",
+  "run_time": 7.0,
+  "sim_time": 10.0
+ },
+ {
+  "t": 35.6,
+  "name": "chime"
+ },
+ {
+  "t": 37.8,
+  "name": "whoosh"
+ }
+]

@@ -1,0 +1,17 @@
+{
+ "hook": 4.71,
+ "axes": 2.9,
+ "long": 3.26,
+ "screen": 3.01,
+ "mid": 3.31,
+ "inertia": 6.25,
+ "wobble": 5.46,
+ "euler": 6.42,
+ "linear": 8.68,
+ "combine": 7.4,
+ "stable": 7.94,
+ "numbers": 9.22,
+ "sphere": 8.11,
+ "saddle": 8.32,
+ "outro": 3.93
+}
